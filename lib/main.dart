@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterlearn/userdatatype.dart';
 
 import 'databaseHelper.dart';
 
@@ -52,6 +53,43 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  void _incrementCounter() {
+  void _incrementCounter() async{
+   
+var db=new DatabaseHelper();
+
+int save =await db.saveUser(new UserDataType("_username", "123"));
+print('the user are savr $save');
+int t=  await db.getCount();
+print('db getCount $t');
+List users= await db.getallUser();
+for(int i=0;i<users.length;i++){
+  UserDataType userDataType=UserDataType.map(users[i]);
+  print(userDataType.id);
+  print(userDataType.usernume);
+  print(userDataType.password);
+}
+
+
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
