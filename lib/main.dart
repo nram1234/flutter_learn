@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutterlearn/userdatatype.dart';
 
 import 'databaseHelper.dart';
+import 'learntow/drawerScreen.dart';
+import 'learntow/homeScreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -33,18 +35,23 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(
 
-        title: Text(widget.title),
-      ),
-      body: Center(
+      body: Stack(
+        children: [
+          DrawerScreen(),
+          HomeScreen()
 
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-         ],
-        ),
+        ],
       ),
+
+//      Center(
+//
+//        child: Column(
+//          mainAxisAlignment: MainAxisAlignment.center,
+//          children: <Widget>[
+//         ],
+//        ),
+//      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
