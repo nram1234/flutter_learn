@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'configuration.dart';
@@ -14,13 +15,26 @@ class _DrawerScreenState extends State<DrawerScreen> {
       color: primaryGreen,
       child: Stack(
         children: <Widget>[
-         Align( alignment: Alignment.topLeft,child: Text('9999999999'),), Align(
+          Align(
+            alignment: Alignment.topLeft,
+            child: Text('9999999999'),
+          ),
+          Positioned(left: 5.0,top: MediaQuery.of(context).size.height*.3,
             child: ListView(
-              children: <Widget>[Text('8888'),Text('8888'),Text('8888'),Text('8888')],
+              children: <Widget>[
+                Text('8888'),
+                Text('8888'),
+                Text('8888'),
+                Text('8888')
+              ],
             ),
-            alignment: Alignment.centerLeft,
-          )
-       ,   Align( alignment: Alignment.bottomLeft,child: Text('9999999999'),), ],
+
+          ),
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Text('9999999999'),
+          ),
+        ],
       ),
     );
   }
