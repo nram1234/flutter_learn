@@ -11,30 +11,32 @@ class DrawerScreen extends StatefulWidget {
 class _DrawerScreenState extends State<DrawerScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: primaryGreen,
-      child: Stack(
-        children: <Widget>[
-          Align(
-            alignment: Alignment.topLeft,
-            child: Text('9999999999'),
-          ),
-          Positioned(left: 5.0,top: MediaQuery.of(context).size.height*.3,
-            child: Column(
-              children: <Widget>[
-                Text('8888'),
-                Text('8888'),
-                Text('8888'),
-                Text('8888')
-              ],
+    return SafeArea(top: true,
+      child: Container(
+        color: primaryGreen,
+        child: Stack(
+          children: <Widget>[
+            Align(
+              alignment: Alignment.topLeft,
+              child: Text('9999999999'),
             ),
+            Positioned(left: 5.0,top: MediaQuery.of(context).size.height*.3,
+              child: Column(
+                children: <Widget>[
+                  Text('8888'),
+                  Text('8888'),
+                  Text('8888'),
+                  Text('8888')
+                ],
+              ),
 
-          ),
-          Align(
-            alignment: Alignment.bottomLeft,
-            child: Text('9999999999'),
-          ),
-        ],
+            ),
+            Align(
+              alignment: Alignment.bottomLeft,
+              child: Text('9999999999'),
+            ),
+          ],
+        ),
       ),
     );
   }
