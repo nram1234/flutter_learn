@@ -117,7 +117,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
            Positioned(left: 5,
                bottom: 0.0,
               child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+
                 children: <Widget>[
                   Icon(
                     Icons.settings,
