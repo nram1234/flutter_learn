@@ -125,7 +125,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
                   ),
                   Text('settings',
                       style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold)),  VerticalDivider(thickness: 2.0,indent: 3,endIndent: 3,),  Text('settings',
+                          color: Colors.white, fontWeight: FontWeight.bold)),  VerticalDivider(thickness: 2.0,indent: MediaQuery.of(context).size.height-10,endIndent: MediaQuery.of(context).size.height-3,),  Text('settings',
                       style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold))
                 ],
