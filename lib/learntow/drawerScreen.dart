@@ -30,7 +30,19 @@ class _DrawerScreenState extends State<DrawerScreen> {
                     children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
                     crossAxisAlignment: CrossAxisAlignment.start,
                   )
-                ],
+              , Row(
+                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  ), Row(
+                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  ), Row(
+                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  ), Row(
+                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  )  ],
               ),
             ),
             Align(
