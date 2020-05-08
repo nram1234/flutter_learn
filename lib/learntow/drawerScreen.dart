@@ -28,51 +28,86 @@ class _DrawerScreenState extends State<DrawerScreen> {
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Icon(Icons.flag),
+                      Icon(
+                        Icons.flag,
+                        color: Colors.white,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                      Text(
+                        '9999999999',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )
                     ],
                     crossAxisAlignment: CrossAxisAlignment.start,
                   ),
                   Row(
                     children: <Widget>[
-                      Icon(Icons.flag),
+                      Icon(
+                        Icons.flag,
+                        color: Colors.white,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                      Text(
+                        '9999999999',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )
                     ],
                     crossAxisAlignment: CrossAxisAlignment.start,
                   ),
                   Row(
                     children: <Widget>[
-                      Icon(Icons.flag),
+                      Icon(
+                        Icons.flag,
+                        color: Colors.white,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                      Text(
+                        '9999999999',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )
                     ],
                     crossAxisAlignment: CrossAxisAlignment.start,
                   ),
                   Row(
                     children: <Widget>[
-                      Icon(Icons.flag,color: Colors.white,),
+                      Icon(
+                        Icons.flag,
+                        color: Colors.white,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                      Text(
+                        '9999999999',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )
                     ],
                     crossAxisAlignment: CrossAxisAlignment.start,
                   ),
                   Row(
                     children: <Widget>[
-                      Icon(Icons.flag),
+                      Icon(
+                        Icons.flag,
+                        color: Colors.white,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                      Text(
+                        '9999999999',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )
                     ],
                     crossAxisAlignment: CrossAxisAlignment.start,
                   )
@@ -81,7 +116,20 @@ class _DrawerScreenState extends State<DrawerScreen> {
             ),
             Align(
               alignment: Alignment.bottomLeft,
-              child: Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Icon(
+                    Icons.settings,
+                    color: Colors.white,
+                  ),
+                  Text('settings',
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold)),  VerticalDivider(thickness: 2.0,),  Text('settings',
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold))
+                ],
+              ),
             ),
           ],
         ),
