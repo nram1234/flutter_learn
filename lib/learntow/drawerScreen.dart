@@ -11,7 +11,8 @@ class DrawerScreen extends StatefulWidget {
 class _DrawerScreenState extends State<DrawerScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(top: true,
+    return SafeArea(
+      top: true,
       child: Container(
         color: primaryGreen,
         child: Stack(
@@ -20,16 +21,17 @@ class _DrawerScreenState extends State<DrawerScreen> {
               alignment: Alignment.topLeft,
               child: Text('9999999999'),
             ),
-            Positioned(left: 5.0,top: MediaQuery.of(context).size.height*.45,
+            Positioned(
+              left: 5.0,
+              top: MediaQuery.of(context).size.height * .45,
               child: Column(
                 children: <Widget>[
-                  ListTile(title: Text('oooooo'),leading: Icon(Icons.flag),),
-                  Text('8888'),
-                  Text('8888'),
-                  Text('8888')
+                  Row(
+                    children: <Widget>[Icon(Icons.flag),Text('9999999999')],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  )
                 ],
               ),
-
             ),
             Align(
               alignment: Alignment.bottomLeft,
