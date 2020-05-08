@@ -22,12 +22,12 @@ class _DrawerScreenState extends State<DrawerScreen> {
               child: Text('9999999999'),
             ),
             Positioned(
-              left: 5.0,
+              left: 10.0,
               top: MediaQuery.of(context).size.height * .45,
               child: Column(
                 children: <Widget>[
                   Row(
-                    children: <Widget>[Icon(Icons.flag),Text('9999999999')],
+                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
                     crossAxisAlignment: CrossAxisAlignment.start,
                   )
                 ],
