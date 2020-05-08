@@ -20,7 +20,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
             child: Text('9999999999'),
           ),
           Positioned(left: 5.0,top: MediaQuery.of(context).size.height*.3,
-            child: ListView(
+            child: Column(
               children: <Widget>[
                 Text('8888'),
                 Text('8888'),
