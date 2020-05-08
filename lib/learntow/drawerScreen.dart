@@ -27,27 +27,61 @@ class _DrawerScreenState extends State<DrawerScreen> {
               child: Column(
                 children: <Widget>[
                   Row(
-                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
+                    children: <Widget>[
+                      Icon(Icons.flag),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                    ],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.flag),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                    ],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.flag),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                    ],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.flag,color: Colors.white,),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                    ],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.flag),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+                    ],
                     crossAxisAlignment: CrossAxisAlignment.start,
                   )
-              , Row(
-                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                  ), Row(
-                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                  ), Row(
-                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                  ), Row(
-                    children: <Widget>[Icon(Icons.flag),SizedBox(width: 10,),Text('9999999999')],
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                  )  ],
+                ],
               ),
             ),
             Align(
               alignment: Alignment.bottomLeft,
-              child: Text('9999999999'),
+              child: Text('9999999999',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
             ),
           ],
         ),
