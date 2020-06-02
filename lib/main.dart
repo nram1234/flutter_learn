@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutterlearn/trymanyWidget.dart';
 import 'package:flutterlearn/userdatatype.dart';
 
+import 'animating.dart';
 import 'databaseHelper.dart';
 import 'learntow/drawerScreen.dart';
 import 'learntow/homeScreen.dart';
+import 'learntow/newScrol.dart';
+import 'learntow/newpro.dart';
+import 'learntow/profile.dart';
+import 'learntow/userList.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +23,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home:NewListScrol()// MyHomePage(title: 'Flutter Demo Home Page')//UserProfilePage()//Profile()// TrymanyWidget()//HomeScreen()//,
     );
   }
 }
@@ -36,13 +42,32 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
 
-      body: Stack(
+      body:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Stack(
         children: [
           DrawerScreen(),
           HomeScreen()
 
         ],
-      ),
+      )
 
 //      Center(
 //
@@ -52,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //         ],
 //        ),
 //      ),
-      floatingActionButton: FloatingActionButton(
+      ,floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
