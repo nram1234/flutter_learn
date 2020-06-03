@@ -5,6 +5,7 @@ import 'package:flutterlearn/userdatatype.dart';
 import 'animating.dart';
 import 'databaseHelper.dart';
 import 'learntow/drawerScreen.dart';
+import 'learntow/drawingcurve.dart';
 import 'learntow/homeScreen.dart';
 import 'learntow/newScrol.dart';
 import 'learntow/newpro.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home:NewListScrol()// MyHomePage(title: 'Flutter Demo Home Page')//UserProfilePage()//Profile()// TrymanyWidget()//HomeScreen()//,
+      home:MyCunv() //UserProfilePage()//NewListScrol()// MyHomePage(title: 'Flutter Demo Home Page')//UserProfilePage()//Profile()// TrymanyWidget()//HomeScreen()//,
     );
   }
 }
